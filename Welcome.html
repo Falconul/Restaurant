@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Welcome.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="welcome-content">
+        <h1>Happy Halloween</h1>
+        <audio id="halloween-song" src="./images/Theme.mp3" autoplay></audio>
+        <button id="play-audio">Play</button>
+    <div class="scrolling-images">
+        <img src="./images/1.webp" alt="Image 1">
+        <img src="./images/2.jpg" alt="Image 2">
+        <img src="./images/3.png" alt="Image 3">
+        <img src="./images/4.webp" alt="Image 4">
+        <img src="./images/5.webp" alt="Image 5">
+    </div>
+</div>
+<script>
+    document.getElementById("play-audio").addEventListener("click", function() {
+    document.getElementById("halloween-song").play();
+});
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        window.location.href = "index.html"; 
+    }, 10000); 
+});
+</script>
+</body>
+</html>
